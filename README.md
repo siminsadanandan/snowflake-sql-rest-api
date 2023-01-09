@@ -17,15 +17,15 @@ Setting up key based authentication for a snowflake  user
 
 
 ## Option#1
-- Install *snowsql CLI*, follow doc <https://docs.snowflake.com/en/user-guide/snowsql-install-config.html>
-- Run *curl-test.sh* script after updating the required params in the script and the associated request payload file *request-body.json*
+1. Install *snowsql CLI*, follow doc <https://docs.snowflake.com/en/user-guide/snowsql-install-config.html>
+2. Run *curl-test.sh* script after updating the required params in the script and the associated request payload file *request-body.json*
 		- you can change the SQL in the *request-body.json* file, if you want to use bind variable you have provide the value to the bind variables in *bindings* section of this json file.
 
 
 ## Option#2
 Run the python script to generate JWT token and submit the statements API request. In the example below we are running the python script *snow-sql-api-with-jwt.py* inside a custom docker container which has all the required packages installed.
-- build the python docker image with all the required dependencies and copy the required files including python *script snow-sql-api-with-jwt.py*
-- snowflake query defined in the request-body.json file using the statements REST api endpoint
+1. build the python docker image with all the required dependencies and copy the required files including python *script snow-sql-api-with-jwt.py*
+2. snowflake query defined in the request-body.json file using the statements REST api endpoint
 
 *Note: currently the account, url, user details are hardcoded in the Docker file (CMD section), you can change the values and rebuild to point to your required endpoint, the private key pair for auth should also be copied. to the docker build folder before building. You can change the SQL in the *request-body.json* file, if you want to use bind variable you have provide the value to the bind variables in *bindings* section of this json file.*
 
