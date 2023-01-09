@@ -195,7 +195,7 @@ def main():
     cli_parser.add_argument('--lifetime', type=int, default=59, help='The number of minutes that the JWT should be valid for.')
     cli_parser.add_argument('--renewal_delay', type=int, default=54, help='The number of minutes before the JWT generator should produce a new JWT.')
     cli_parser.add_argument('--req_file_name', required=True, default='request-body.json',help='The name of the file with the request body.')
-    cli_parser.add_argument('--end_point_url', required=True, default='https://algwchr-qq00544.snowflakecomputing.com:443/api/v2/statements',help='Snowflake SQL API endpoint.')
+    cli_parser.add_argument('--end_point_url', required=True, default='https://algwchr-rr00544.snowflakecomputing.com:443/api/v2/statements',help='Snowflake SQL API endpoint.')
 
     args = cli_parser.parse_args()
 

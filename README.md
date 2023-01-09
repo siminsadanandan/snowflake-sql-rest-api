@@ -10,7 +10,7 @@
 # 
 # Note: currently the account, url, user details are hardcoded in th Docker file, you can change the script and rebuild to point to your required endpoint
 # the private key pait for auth should also be copied.
-# /usr/src/app/snow-sql-api-with-jwt.py","--account", "algwchr-qq00544", "--user", "AIRBYTE_USER", "--private_key_file_path", "/usr/src/app/rsa_key.p8", "--end_point_url", "https://algwchr-qq00544.snowflakecomputing.com:443/api/v2/statements 
+# /usr/src/app/snow-sql-api-with-jwt.py","--account", "algwchr-rr00544", "--user", "AIRBYTE_USER", "--private_key_file_path", "/usr/src/app/rsa_key.p8", "--end_point_url", "https://algwchr-rr00544.snowflakecomputing.com:443/api/v2/statements 
 
 # docker build command
 docker build -t sf-sql-req .
