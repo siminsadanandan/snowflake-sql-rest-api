@@ -1,0 +1,14 @@
+{
+  "statement": "select * from company where id=?",
+  "timeout": 60,
+  "database": "AIRBYTE_DATABASE",
+  "schema": "AIRBYTE",
+  "warehouse": "AIRBYTE_WAREHOUSE",
+  "role": "AIRBYTE_ROLE",
+  "bindings": {
+    "1": {
+      "type": "FIXED",
+      "value": "1"
+    }
+  }
+}
